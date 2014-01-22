@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/StandardRelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_logo" layout="@layout/spf_header" />
+    <ImageView android:id="@id/imageView2" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_blue_line" android:scaleType="fitXY" android:layout_below="@id/title_logo" />
+    <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout" android:background="@drawable/layout_border" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_above="@id/ImageView01" android:layout_below="@id/imageView2">
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/imageView2">
+            <RelativeLayout android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:id="@id/common_title" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" style="@style/Title" />
+                <TableLayout android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stretchColumns="2" android:layout_below="@id/common_title">
+                    <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+                        <ImageView android:layout_gravity="center" android:id="@id/images" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitStart" android:layout_weight="1.0" android:onClick="launchImage" />
+                        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:id="@id/LinearLayoutShare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                            <ImageView android:id="@id/twitter" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/twitter" android:onClick="shareButton" />
+                            <ImageView android:id="@id/facebook" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/facebook" android:onClick="shareButton" />
+                            <ImageView android:id="@id/mapDetail" android:padding="5.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/seeonmap" android:onClick="shareButton" />
+                            <ImageView android:id="@id/mapDetail_Off" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/seeonmap_off" />
+                        </LinearLayout>
+                    </TableRow>
+                </TableLayout>
+            </RelativeLayout>
+        </LinearLayout>
+        <ScrollView android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_above="@id/ImageView01" android:layout_below="@id/LinearLayout">
+            <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/imageView1" android:layout_below="@id/imageView2">
+                <TextView android:autoLink="phone" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/Label1" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <ImageView android:id="@id/ImageView01" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitXY" android:minHeight="50.0dip" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="7" android:versionName="1.62" package="org.spf.mobi.ui"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+    <supports-screens android:smallScreens="true" android:normalScreens="true" android:largeScreens="false" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-sdk android:minSdkVersion="8"/>
+    <application android:label="@string/app_name" android:icon="@drawable/icon" android:debuggable="true">
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:label="@string/app_name" android:name=".SPFSplashActivity" android:launchMode="singleTask" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".SPFHomeActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".map.SPFInteractiveMapActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".map.SPFSingleMapElementActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".map.SPFMapPointDetails" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".locator.SPFLocatorListing" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".common.SPFCommonListing" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".news.SPFNewsListing" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".common.SPFDetailPage" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".missing.SPFMissingListing" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".common.SPFLocationSearch" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".web.SPFWebHome" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".web.SPFWebsite" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".locator.SPFLocatorMap" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".aboutus.SPFAboutus" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".appeal.SPFAppealListing" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".contact.SPFContactNumber" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".common.SPFSingleElementMapDetail" android:screenOrientation="portrait" />
+        <uses-library android:name="com.google.android.maps" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".videos.SPFVideoOptions" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".SPFImageActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar.Fullscreen" android:name=".common.SPFImageView" android:screenOrientation="portrait" />
+    </application>
+</manifest>

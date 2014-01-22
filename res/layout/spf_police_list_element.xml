@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textColor="#ffffffff" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentLeft="true" />
+                <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textColor="#ffffffff" android:id="@id/distance" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/RelativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imagesPolice" android:paddingTop="5.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_alignBottom="@id/number" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_toRightOf="@id/imagesPolice" android:layout_alignParentTop="true" style="@style/Description" />
+                <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/imagesPolice" android:layout_below="@id/address">
+                    <LinearLayout android:id="@id/spf_call" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/Description" />
+                        <ImageView android:id="@id/callImage" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

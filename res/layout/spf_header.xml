@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/header_logo" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/spf_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:src="@drawable/spflogo" android:layout_alignParentLeft="true" android:onClick="doHome" />
+    <TextView android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/backbtn" android:layout_toRightOf="@id/spf_logo" android:layout_centerVertical="true" style="@style/HeaderTitle" />
+    <ImageView android:id="@id/backbtn" android:background="@drawable/spflogo" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

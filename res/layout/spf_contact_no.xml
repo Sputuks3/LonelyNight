@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/StandardRelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_logo" layout="@layout/spf_header" />
+    <ImageView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_blue_line" android:scaleType="fitXY" android:layout_below="@id/title_logo" />
+    <ScrollView android:orientation="vertical" android:id="@id/ScrollView1" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/ImageView01" android:layout_below="@id/imageView2">
+        <LinearLayout android:orientation="vertical" android:id="@id/LinearLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_emergency" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/contact_police_emergency_desc" style="@style/Description1" />
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_emergency" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:paddingLeft="70.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_emergency_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_hotline" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/first" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/contact_police_desc1" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_desc2" style="@style/Description1" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_police_hotline" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_hotline_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_traffic" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/contact_police_traffic_desc" style="@style/Description1" />
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_traffic" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_traffic_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_civil" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/contact_police_civil_desc1" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_civil_desc2" style="@style/Description1" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_civil" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:paddingLeft="70.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_civil_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_non_emergency" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/contact_police_non_emergency_desc" style="@style/Description1" />
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_non_emergency" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:paddingLeft="70.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_non_emergency_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_hdb" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:paddingLeft="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_hdb_desc1" style="@style/Description1" />
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_hdb" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_hdb_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_nea" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_nea_desc1" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_nea_desc2" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_nea_desc3" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_nea_desc4" style="@style/Description1" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_nea" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_nea_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_ava" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_ava_desc" style="@style/Description1" />
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_ava" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_ava_no" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_lta" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="vertical" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_lta_desc1" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_lta_desc2" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_lta_desc3" style="@style/Description1" />
+                                </LinearLayout>
+                                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                    <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_lta_desc4" style="@style/Description1" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:id="@id/no_contact_police_lta" android:background="@drawable/callbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0dip" android:textColor="#ff012561" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_lta_no" style="@style/Description1" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="1.0dip">
+                        <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                            <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_cmc" android:layout_alignParentLeft="true" style="@style/Title_con" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/linearLayout1" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TableRow android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <LinearLayout android:orientation="horizontal" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" />
+                                <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_police_cmc_desc" style="@style/Description1" />
+                            </LinearLayout>
+                        </TableRow>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/no_contact_police_cmu_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/TextView1" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_cmu" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Description1" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff012561" android:gravity="right" android:id="@id/TextView2" android:paddingRight="20.0dip" android:layout_width="95.0dip" android:layout_height="wrap_content" android:text="@string/contact_police_cmu_msg" android:layout_toRightOf="@id/TextView1" android:layout_alignParentTop="true" style="@style/Description1" />
+                            <ImageView android:id="@id/imageView1" android:layout_width="160.0dip" android:layout_height="wrap_content" android:src="@drawable/callbtn" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/no_contact_police_cmc_central_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/TextView1" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_cmc_central" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Description1" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff012561" android:gravity="right" android:id="@id/TextView2" android:paddingRight="20.0dip" android:layout_width="175.0dip" android:layout_height="wrap_content" android:text="@string/contact_police_cmc_central_msg" android:layout_toRightOf="@id/TextView1" android:layout_alignBaseline="@id/TextView1" android:layout_alignParentTop="true" style="@style/Description1" />
+                            <ImageView android:id="@id/imageView3" android:layout_width="160.0dip" android:layout_height="wrap_content" android:src="@drawable/callbtn" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:id="@id/number" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <RelativeLayout android:orientation="horizontal" android:id="@id/no_contact_police_cmc_sub_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" android:onClick="call">
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/TextView1" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/contact_police_cmc_sub" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/Description1" />
+                            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="#ff012561" android:gravity="right" android:id="@id/TextView2" android:paddingRight="20.0dip" android:layout_width="110.0dip" android:layout_height="wrap_content" android:text="@string/contact_police_cmc_sub_msg" android:layout_toRightOf="@id/TextView1" android:layout_alignBaseline="@id/TextView1" android:layout_alignParentTop="true" style="@style/Description1" />
+                            <ImageView android:id="@id/imageView5" android:layout_width="160.0dip" android:layout_height="wrap_content" android:src="@drawable/callbtn" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView android:id="@id/ImageView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_blue_line" android:scaleType="fitXY" android:layout_alignParentBottom="true" />
+</RelativeLayout>

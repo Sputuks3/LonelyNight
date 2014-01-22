@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="@style/StandardRelativeLayout"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/title_logo" layout="@layout/spf_header" />
+    <ImageView android:id="@id/imageView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_blue_line" android:scaleType="fitXY" android:layout_below="@id/title_logo" />
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/RelativeLayout1" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ImageView01" android:layout_below="@id/imageView2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearLayout1" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="1.0" android:layout_above="@id/textView2" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/headImg" android:layout_width="216.0dip" android:layout_height="116.0dip" android:src="@drawable/blue_pin1_l" />
+            <LinearLayout android:orientation="vertical" android:id="@id/llStatisticTable" android:layout_width="254.0dip" android:layout_height="wrap_content" android:layout_weight="0.6">
+                <TextView android:textSize="12.0dip" android:textColor="#ff184894" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/txtTblTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+                <ImageView android:id="@id/image" android:layout_width="fill_parent" android:layout_height="30.0dip" android:src="@drawable/header_statistics" android:scaleType="fitXY" />
+                <ListView android:id="@id/lstStatisticRecords" android:padding="0.0px" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="150.0dip" android:divider="#ffffffff" android:dividerHeight="0.0px" />
+                <TextView android:textSize="12.0dip" android:textStyle="bold" android:textColor="#ff184894" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/txtRecordsInfo" android:background="@drawable/tbl_row_background" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="No Data Found." />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="3.0" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <Button android:textSize="10.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/crimeNews" android:background="@drawable/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/crime_news" android:width="100.0dip" android:layout_weight="1.0" android:onClick="onClick" />
+            <Button android:textSize="10.0sp" android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/appeal" android:background="@drawable/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appeal" android:width="100.0dip" android:layout_weight="1.0" android:onClick="onClick" />
+            <Button android:textSize="10.0sp" android:textColor="#ffffffff" android:id="@id/missingPerson" android:background="@drawable/back_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Missing Persons" android:layout_weight="1.0" android:onClick="onClick" />
+        </LinearLayout>
+        <TextView android:textSize="10.0dip" android:textColor="#ff012561" android:id="@id/textView2" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/disclaimer" android:layout_above="@id/linearLayout3" android:layout_alignParentRight="true" style="?android:attr/textAppearanceSmall" />
+    </RelativeLayout>
+    <ImageView android:id="@id/ImageView01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/bottom_blue_line" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ffffffff" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/layout_border" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:background="#ff15317e" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="1.0dip">
+            <RelativeLayout android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip">
+                <TextView android:textAppearance="@*android:style/TextAppearance.Small" android:textSize="12.0dip" android:textColor="#ffffffff" android:id="@id/news_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/RelativeLayout1" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:id="@id/description" android:paddingLeft="10.0dip" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="3" android:layout_toRightOf="@id/crimeImg" android:layout_alignParentTop="true" style="@style/Description" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffff0000" android:id="@id/readmore" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/read_more" android:layout_below="@id/description" android:layout_alignParentRight="true" style="@style/ReadMore" />
+            <ImageView android:id="@id/crimeImg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:minWidth="60.0dip" android:minHeight="40.0dip" android:layout_alignBottom="@id/readmore" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
