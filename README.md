@@ -1,7 +1,7 @@
 LonelyNight
 ===========
 
-This is the source code for the Singapore Police Force's Android Mobile App, Police@SG (https://play.google.com/store/apps/details?id=org.spf.mobi.ui). I obtained it through a process called "reverse-compilation" or reverse engineering after downloading it from the Google Play Store. The code is written in the Java programming language.
+This is the source code for the Singapore Police Force's Android Mobile App, codenamed, Project LonelyNight (https://play.google.com/store/apps/details?id=org.spf.mobi.ui). I obtained it through a process called "reverse-compilation" or reverse engineering after downloading it from the Google Play Store. The code is written in the Java programming language.
 
 Reverse Engineering is not exactly considered hacking because, no website is compromised by this. In fact because it's software that runs on your computer/device and it's in your interest to know that its free of malicious code. THerefore in the interest of transparency and security, I'm publishing the code here. Even the Whitehouse.gov mobile Apps have published their apps and yet made their source code available (http://www.whitehouse.gov/mobile/)
 
